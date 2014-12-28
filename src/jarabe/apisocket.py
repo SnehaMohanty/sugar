@@ -111,7 +111,7 @@ class ActivityAPI(API):
 
     def send_error(self, request, obj):
         self._client.send_error(request, obj)
-
+    
 
 class DatastoreAPI(API):
     def __init__(self, client):
