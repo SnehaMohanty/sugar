@@ -33,7 +33,6 @@ from jarabe.model import shell
 from jarabe.model import session
 from jarabe.journal.objectchooser import ObjectChooser
 
-
 class StreamMonitor(object):
     def __init__(self):
         self.on_data = None
@@ -112,7 +111,7 @@ class ActivityAPI(API):
 
     def send_error(self, request, obj):
         self._client.send_error(request, obj)
-    
+
 
 class DatastoreAPI(API):
     def __init__(self, client):
